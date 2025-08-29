@@ -66,9 +66,17 @@ for (let btn of favouriteBTN) {
     let srcProp = btn.src;
 
     let srcAttr = btn.getAttribute("src");
-    btn.setAttribute("src", "./assets/heart.png");
 
-    favouriteCount.innerHTML = Number(favouriteCount.innerText) + 1;
+    if (srcAttr === "./assets/heart.png") {
+      btn.setAttribute("src", "./assets/heartGRAY.png");
+
+      if (Number(favouriteCount.innerText) > 0) {
+        favouriteCount.innerHTML = Number(favouriteCount.innerText) - 1;
+      }
+    } else {
+      btn.setAttribute("src", "./assets/heart.png");
+      favouriteCount.innerHTML = Number(favouriteCount.innerText) + 1;
+    }
   });
 }
 
