@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F5FFF6] w-full min-h-screen">
+    <nav
+      class="w-full min-h-[100px] h-[5vw] bg-white border flex items-center justify-between px-4 md:px-10"
+    >
+      <div class="__left__ flex items-center justify-between gap-2">
+        <img src="./assets/logo.png" class="w-[55px] h-[55px]" alt="" />
+        <span class="flex flex-col justify-center">
+          <span
+            class="text-wrap md:text-[1.2vw] text-[1.1rem] font-extrabold text-[#006747] inline-block"
+            >Emergency</span
+          >
+          <span
+            class="text-wrap md:text-[1.2vw] text-[1rem] font-extrabold text-[#006747] inline-block"
+            >Services</span
+          >
+        </span>
+      </div>
+      <div class="__right__ flex items-center justify-between md:gap-2 gap-1">
+        <button
+          class="flex md:px-6 md:py-3 px-2 py-1 rounded-full items-center justify-center md:gap-2 gap-1 bg-[rgba(65,255,107,0.1)]"
+        >
+          <h2 id="favourite-count" class="text-black">0</h2>
+          <img src="./assets/heart.png" class="w-[26px]" alt="" />
+        </button>
+
+        <button
+          class="flex md:px-6 md:py-3 px-1 py-1 rounded-full items-center justify-center md:gap-2 gap-1 bg-[rgba(65,255,107,0.1)]"
+        >
+          <h2 id="coin-count" class="text-black">100</h2>
+          <img src="./assets/coin.png" class="w-[26px]" alt="" />
+        </button>
+
+        <button
+          class="flex md:px-6 md:py-3 px-2 py-1 rounded-full items-center justify-center md:gap-2 gap-1 bg-[#00A63E]"
+        >
+          <h2 id="copy-count" class="text-white font-semibold">0</h2>
+          <h2 class="text-white font-semibold text-[1rem]">Copy</h2>
+        </button>
+      </div>
+    </nav>
+  </body>
+</html>
