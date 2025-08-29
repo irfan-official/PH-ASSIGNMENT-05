@@ -72,6 +72,8 @@ for (let btn of favouriteBTN) {
   });
 }
 
+// ---------------- Clear call History ----------------------------------------------------
+
 clearHistory.addEventListener("click", () => {
   callHistory.innerHTML = "";
 });
@@ -89,6 +91,7 @@ for (let btn of call_btn) {
     if (totalCoin > 0) {
       coin.innerHTML = totalCoin - 20;
     } else {
+      alert("⚠️ Call limit exceeded");
       return;
     }
 
