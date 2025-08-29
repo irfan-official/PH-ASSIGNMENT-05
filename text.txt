@@ -1,0 +1,5 @@
+font-[Inter]
+
+font-['Hind_Madurai']
+
+font-[Roboto]

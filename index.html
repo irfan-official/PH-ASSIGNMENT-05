@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-[#F5FFF6] w-full min-h-screen">
     <nav
@@ -27,22 +41,26 @@
         <button
           class="flex md:px-6 md:py-3 px-2 py-1 rounded-full items-center justify-center md:gap-2 gap-1 bg-[rgba(65,255,107,0.1)]"
         >
-          <h2 id="favourite-count" class="text-black">0</h2>
+          <h2 id="favourite-count font-[Inter]" class="text-black">0</h2>
           <img src="./assets/heart.png" class="w-[26px]" alt="" />
         </button>
 
         <button
           class="flex md:px-6 md:py-3 px-1 py-1 rounded-full items-center justify-center md:gap-2 gap-1 bg-[rgba(65,255,107,0.1)]"
         >
-          <h2 id="coin-count" class="text-black">100</h2>
+          <h2 id="coin-count" class="text-black font-[Inter]">100</h2>
           <img src="./assets/coin.png" class="w-[26px]" alt="" />
         </button>
 
         <button
           class="flex md:px-6 md:py-3 px-2 py-1 rounded-full items-center justify-center md:gap-2 gap-1 bg-[#00A63E]"
         >
-          <h2 id="copy-count" class="text-white font-semibold">0</h2>
-          <h2 class="text-white font-semibold text-[1rem]">Copy</h2>
+          <h2 id="copy-count" class="text-white font-semibold font-[Inter]">
+            0
+          </h2>
+          <h2 class="text-white font-semibold text-[1rem] font-[Inter]">
+            Copy
+          </h2>
         </button>
       </div>
     </nav>
@@ -52,10 +70,10 @@
         class="__hero-section__ bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col gap-2 p-5 justify-between items-center text-white"
       >
         <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="" />
-        <h2 class="font-bold text-[40px] text-center">
+        <h2 class="font-bold text-[40px] text-center font-['Hind_Madurai']">
           Emergency Service Directory
         </h2>
-        <p class="text-center">
+        <p class="text-center font-['Hind_Madurai']">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
@@ -89,17 +107,21 @@
             </div>
             <div class="flex flex-col gap-5 justify-between">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   National Emergency Number
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
                   National Emergency
                 </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">999</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">999</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >All</span
                 >
               </div>
@@ -112,7 +134,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -122,7 +144,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -149,15 +171,17 @@
             </div>
             <div class="flex flex-col gap-5">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   Police Helpline Number
                 </h2>
                 <p class="__sub-title__ text-gray-500 text-[18px]">Police</p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">999</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">999</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >Police</span
                 >
               </div>
@@ -170,7 +194,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -180,7 +204,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -206,17 +230,21 @@
             </div>
             <div class="flex flex-col gap-5">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   Fire Service Number
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
                   Fire Service
                 </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">999</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">999</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >Fire</span
                 >
               </div>
@@ -229,7 +257,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -239,7 +267,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -268,12 +296,18 @@
                 <h2 class="__title__ font-bold text-black text-[24px]">
                   Ambulance Service
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">Ambulance</p>
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
+                  Ambulance
+                </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">1994-999999</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">
+                  1994-999999
+                </h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >Health</span
                 >
               </div>
@@ -286,7 +320,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -296,7 +330,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -322,17 +356,21 @@
             </div>
             <div class="flex flex-col gap-5">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   Women & Child Helpline
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
                   Women & Child Helpline
                 </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">109</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">109</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >Help</span
                 >
               </div>
@@ -345,7 +383,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -355,7 +393,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -382,17 +420,21 @@
             </div>
             <div class="flex flex-col gap-5">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   Anti-Corruption Helpline
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
                   Anti-Corruption
                 </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">106</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">106</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >Govt.</span
                 >
               </div>
@@ -405,7 +447,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -415,7 +457,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -442,17 +484,21 @@
             </div>
             <div class="flex flex-col gap-5">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   Electricity Helpline
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
                   Electricity Outage
                 </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">16216</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">16216</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >Electricity</span
                 >
               </div>
@@ -465,7 +511,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -475,7 +521,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -502,15 +548,21 @@
             </div>
             <div class="flex flex-col gap-5">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   Brac Helpline
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">Brac</p>
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
+                  Brac
+                </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">16445</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">16445</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >NGO</span
                 >
               </div>
@@ -523,7 +575,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -533,7 +585,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -560,17 +612,21 @@
             </div>
             <div class="flex flex-col gap-5">
               <div class="__label__">
-                <h2 class="__title__ font-bold text-black text-[24px]">
+                <h2
+                  class="__title__ font-bold text-black text-[24px] font-['Hind_Madurai']"
+                >
                   Bangladesh Railway Helpline
                 </h2>
-                <p class="__sub-title__ text-gray-500 text-[18px]">
+                <p
+                  class="__sub-title__ text-gray-500 text-[18px] font-[Roboto]"
+                >
                   Bangladesh Railway
                 </p>
               </div>
               <div class="__content-container__">
-                <h2 class="font-bold text-[32px] mb-2">163</h2>
+                <h2 class="font-bold text-[32px] mb-2 font-[Roboto]">163</h2>
                 <span
-                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2]"
+                  class="px-5 py-2 rounded-full text-gray-500 text-[18px] bg-[#F2F2F2] font-['Hind_Madurai']"
                   >Travel</span
                 >
               </div>
@@ -583,7 +639,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-[#5C5C5C]">Copy</h2>
+                  <h2 class="text-[16px] text-[#5C5C5C] font-[Roboto]">Copy</h2>
                 </button>
                 <button
                   class="__calling-btn__ border w-[48%] py-2 border-gray-400 bg-[#00A63E] text-white rounded-lg flex items-center justify-center gap-2"
@@ -593,7 +649,7 @@
                     class="w-[16px] h-[16px]"
                     alt=""
                   />
-                  <h2 class="text-[16px] text-white">Call</h2>
+                  <h2 class="text-[16px] text-white font-[Roboto]">Call</h2>
                 </button>
               </div>
             </div>
@@ -613,11 +669,11 @@
                 class="w-[24px] h-[24px]"
                 alt=""
               />
-              <h2 class="font-semibold">Call History</h2>
+              <h2 class="font-semibold font-[Roboto]">Call History</h2>
             </div>
             <button
               id="clear-history"
-              class="__right__ font-semibold text-white w-[35%] px-[36px] py-[12px] rounded-2xl bg-[#00A63E] flex items-center justify-center"
+              class="__right__ font-semibold text-white w-[35%] px-[36px] py-[12px] rounded-2xl bg-[#00A63E] flex items-center justify-center font-[Inter]"
             >
               Clear
             </button>

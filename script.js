@@ -140,10 +140,10 @@ for (let btn of call_btn) {
     callHistory.innerHTML += `
           <div class="__history-card__ p-[16px] w-full flex items-center justify-between gap-2 bg-[#FAFAFA] rounded-lg border-b-2 border-b-gray-100">
             <div class="__left__ ">
-              <h2 class="font-semibold  text-black md:text-[18px]">${title}</h2>
-              <p class="text-[#5C5C5C] md:text-[18px]">${number}</p>
+              <h2 class="font-semibold  text-black md:text-[18px] font-[Inter]">${title}</h2>
+              <p class="text-[#5C5C5C] md:text-[18px] font-['Hind_Madurai']">${number}</p>
             </div>
-            <div class="__right__ md:text-[18px] ">${getTime()}</div>
+            <div class="__right__ md:text-[18px] font-['Hind_Madurai']">${getTime()}</div>
           </div>
 `;
   });
