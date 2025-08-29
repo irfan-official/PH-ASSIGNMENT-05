@@ -20,6 +20,8 @@ function getTime() {
 
 // -------------- Copy Button ---------------------------------------------------------
 
+let copyElement = [];
+
 for (let btn of copy_btn) {
   btn.addEventListener("click", (e) => {
     try {
@@ -29,6 +31,8 @@ for (let btn of copy_btn) {
 
       const number = numberElement.textContent.trim();
 
+      const isUnique = !copyElement.includes(card);
+
       if (!number) return;
 
       // Modern API (works on most desktop + mobile browsers)
@@ -37,7 +41,13 @@ for (let btn of copy_btn) {
           .writeText(number)
           .then(() => {
             alert("Copied: " + number);
-            copyCount.innerHTML = Number(copyCount.innerText) + 1;
+
+            if (isUnique) {
+              copyCount.innerHTML = Number(copyCount.innerText) + 1;
+              copyElement.push(card);
+            } else {
+              return;
+            }
           })
           .catch((err) => {
             console.error("Clipboard error:", err);
@@ -51,7 +61,13 @@ for (let btn of copy_btn) {
         document.execCommand("copy");
         document.body.removeChild(textArea);
         alert("Copied: " + number);
-        copyCount.innerHTML = Number(copyCount.innerText) + 1;
+
+        if (isUnique) {
+          copyCount.innerHTML = Number(copyCount.innerText) + 1;
+          copyElement.push(card);
+        } else {
+          return;
+        }
       }
     } catch (error) {
       alert(error);
